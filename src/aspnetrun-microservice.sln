@@ -3,15 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.19
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6848D06F-CC25-4BEF-B0AD-8776C88859F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{944A503C-67D0-460D-BB6D-890222CA1CE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{8ABEEA14-FF95-4083-A246-6AEA165BF053}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{CC27ECCD-364A-4394-8EA9-926AC38622F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ABEEA14-FF95-4083-A246-6AEA165BF053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABEEA14-FF95-4083-A246-6AEA165BF053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABEEA14-FF95-4083-A246-6AEA165BF053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABEEA14-FF95-4083-A246-6AEA165BF053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC27ECCD-364A-4394-8EA9-926AC38622F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC27ECCD-364A-4394-8EA9-926AC38622F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC27ECCD-364A-4394-8EA9-926AC38622F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC27ECCD-364A-4394-8EA9-926AC38622F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E77A001-02B5-4228-BF33-6AB327D7EC0D}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{944A503C-67D0-460D-BB6D-890222CA1CE9} = {6848D06F-CC25-4BEF-B0AD-8776C88859F6}
+		{8ABEEA14-FF95-4083-A246-6AEA165BF053} = {944A503C-67D0-460D-BB6D-890222CA1CE9}
 	EndGlobalSection
 EndGlobal
