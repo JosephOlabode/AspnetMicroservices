@@ -12,15 +12,15 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Local"
       }
     },
     "OcelotApiGw": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:12389",
+      "applicationUrl": "http://localhost:5010",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Local"
       }
     }
   }
